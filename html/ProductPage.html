@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailBlazer - Product Details</title>
+    <link rel="stylesheet" href="../css/ProductPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body
+  data-product-id="griptech-hiking-gloves"
+  data-product-title="Hiking Gloves"
+  data-product-price="539.82"
+  data-product-image="../images/Hiking-Gloves.jpg"
+  data-product-brand="GRIPTECH"
+  data-product-descriptor="Lightweight, breathable gloves with enhanced grip and touchscreen compatibility">
+
+    <!-- Navigation -->
+    <nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <div class="logo">🏔️ TrailBlazer</div>
+      <ul class="nav-links">
+        <li><a href="landingPage.html">Home</a></li>
+        <li><a href="ProductCatalogue.html" class="active">Gear</a></li>
+        <li><a href="TrailsPage.html">Trails</a></li>
+        <li><a href="GroupHikes.html">Community</a></li>
+        <li><a href="AboutUsPage.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="nav-actions">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search gear, trails...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="account-section">
+        <a href="AdminPanel.html" class="account-btn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+            </svg>
+            Admin
+        </a>
+        <a href="LoginPage.html" class="account-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a href="Cart.html" class="cart-icon" aria-label="Cart">
+          🛒
+          <span class="cart-count" id="cart-count" data-cart-count>0</span>
+        </a>
+        <a href="FavoritesPage.html" class="favorites-icon" aria-label="Favorites">
+          ♥
+          <span class="favorites-count" id="favorites-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="main-content">
+        <div class="container">
+            <div class="simple-breadcrumb">
+                <a href="#" id="breadcrumbHome" onclick="navigateToHome()">TrailBlazer</a>
+                <span class="separator">/</span>
+                <a href="#" id="breadcrumbCategory" onclick="navigateToCategory()">Accessories</a>
+                <span class="separator">/</span>
+                <span id="breadcrumbProduct">Product Name</span>
+            </div>
+
+            <div class="product-detail-container">
+                <div class="product-images">
+                    <div class="main-image-container">
+                        <img id="mainProductImage" src="../images/Hiking-Gloves.jpg" alt="Product Image" class="main-product-image">
+                        <div class="image-zoom-overlay">
+                            <span class="zoom-text">🔍 Click to zoom</span>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div id="productThumbnails" class="thumbnail-images"></div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-header">
+                        <span id="productBrand" class="brand-name">GRIPTECH</span>
+                        <h1 id="productName" class="product-title">Hiking Gloves</h1>
+                        <div class="rating-section">
+                            <div id="productRating" class="stars">
+                                ★★★★☆
+                            </div>
+                            <span id="ratingScore" class="rating-score">4.2</span>
+                            <span class="rating-count">(128 reviews)</span>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-container">
+                            <div class="current-price">
+                                <span class="currency">R</span>
+                                <span id="productPrice" class="price-amount">539.82</span>
+                            </div>
+                            <div id="originalPriceContainer" class="original-price" style="display: none;">
+                                <span class="currency">R</span>
+                                <span id="originalPrice" class="original-amount">699.82</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stock-status">
+                        <div id="stockIndicator" class="stock-indicator in-stock">
+                            <span class="status-icon">✓</span>
+                            <span class="status-text">In stock and ready to ship</span>
+                        </div>
+                    </div>
+
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" onclick="changeQuantity(-1)">−</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" onclick="changeQuantity(1)">+</button>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" onclick="addToCart()">
+                                <span class="cart-icon">🛒</span>
+                                Add To Cart
+                            </button>
+                            <button class="wishlist-btn" onclick="toggleWishlist()">
+                                <span class="heart-icon">♡</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="delivery-info">
+                        <div class="delivery-option">
+                            <span class="delivery-icon">🚚</span>
+                            <span class="delivery-text">Free delivery on orders R500+</span>
+                        </div>
+                        <div class="delivery-option">
+                            <span class="delivery-icon">📦</span>
+                            <span class="delivery-text">Same day delivery available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details-section">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showTab('description', this)">Description</button>
+                    <button class="tab-button" onclick="showTab('features', this)">Features</button>
+                    <button class="tab-button" onclick="showTab('specifications', this)">Specifications</button>
+                    <button class="tab-button" onclick="showTab('reviews', this)">Reviews</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="description" class="tab-panel active">
+                        <div class="description-content">
+                            <h3>Product Description</h3>
+                            <p id="productDescription">
+                                Lightweight, breathable hiking gloves with enhanced grip and touchscreen compatibility. 
+                                Ideal for trail navigation and protection.
+                            </p>
+                            <div class="description-details">
+                                <h4>Perfect For:</h4>
+                                <ul>
+                                    <li>Day hiking and trail walking</li>
+                                    <li>Rock climbing and mountaineering</li>
+                                    <li>Cold weather outdoor activities</li>
+                                    <li>Photography and device operation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="features" class="tab-panel">
+                        <div class="features-content">
+                            <h3>Key Features</h3>
+                            <div id="productFeatures" class="features-list">
+                                <div class="feature-item">
+                                    <span class="feature-icon">📱</span>
+                                    <span class="feature-text">Touchscreen Compatible</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">💨</span>
+                                    <span class="feature-text">Breathable</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✋</span>
+                                    <span class="feature-text">Enhanced Grip</span>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🪶</span>
+                                    <span class="feature-text">Lightweight</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="specifications" class="tab-panel">
+                        <div class="specs-content">
+                            <h3>Technical Specifications</h3>
+                            <table class="specs-table">
+                                <tr>
+                                    <td>Material</td>
+                                    <td>Synthetic leather and mesh</td>
+                                </tr>
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>45g per pair</td>
+                                </tr>
+                                <tr>
+                                    <td>Sizes Available</td>
+                                    <td>S, M, L, XL</td>
+                                </tr>
+                                <tr>
+                                    <td>Touchscreen</td>
+                                    <td>Compatible (thumb and index finger)</td>
+                                </tr>
+                                <tr>
+                                    <td>Water Resistance</td>
+                                    <td>DWR coating</td>
+                                </tr>
+                                <tr>
+                                    <td>Care Instructions</td>
+                                    <td>Hand wash, air dry</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="reviews" class="tab-panel">
+                        <div class="reviews-content">
+                            <h3>Customer Reviews</h3>
+                            <div class="reviews-summary">
+                                <div class="rating-breakdown">
+                                    <div class="overall-rating">
+                                        <span class="big-rating">4.2</span>
+                                        <div class="stars">★★★★☆</div>
+                                        <span class="review-count">Based on 128 reviews</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-list">
+                              <div id="reviewsList" class="reviews-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products-section">
+                <h2>Related Products</h2>
+                <div class="related-products-grid" id="relatedProductsGrid"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="imageZoomModal" class="zoom-modal" style="display: none;">
+        <div class="zoom-modal-content">
+            <span class="zoom-close" onclick="closeZoomModal()">&times;</span>
+            <img id="zoomedImage" src="" alt="Zoomed Product Image" class="zoomed-image">
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div id="notification" class="notification" style="display: none;">
+        <div class="notification-content">
+            <div class="notification-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="notification-message">
+                <h4>Item Added to Cart!</h4>
+                <p id="notification-text">Product has been added to your cart successfully.</p>
+            </div>
+            <button class="notification-close" onclick="hideNotification()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="ProductCatalogue.html">Shop Gear</a></li>
+                        <li><a href="TrailsPage.html">Find Trails</a></li>
+                        <li><a href="GroupHikes.html">Join Community</a></li>
+                        <li><a href="AboutUsPage.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 TrailBlazer. All rights reserved. Adventure awaits! 🏔️</p>
+        </div>
+    </footer>
+
+    <script src="../js/ProductPage.js"></script>
+    <script src="../js/Cart.js"></script>
+    <script>
+function addToCart(){
+  function t(sel){var el=document.querySelector(sel);return el?el.textContent.trim():''}
+  function price(s){
+    if(!s) return 0;
+    var x=s.replace(/[^\d,.-]/g,'').replace(/\s/g,'');
+    if((x.match(/,/g)||[]).length===1 && x.indexOf(',')>x.indexOf('.')) x=x.replace(/\./g,'').replace(',','.');
+    else x=x.replace(/,/g,'');
+    var n=parseFloat(x); return isNaN(n)?0:n;
+  }
+  var title=t('#productName') || document.body.dataset.productTitle || 'Item';
+  var brand=t('#productBrand') || document.body.dataset.productBrand || '';
+  var p=price(t('#productPrice') || document.body.dataset.productPrice || '0');
+  var imgEl=document.querySelector('#mainProductImage, .main-product-image, img');
+  var image=imgEl?imgEl.src:(document.body.dataset.productImage||'');
+  var id=(title+'-'+brand).toLowerCase().replace(/[^a-z0-9]+/g,'-');
+  var qEl=document.getElementById('quantity');
+  var qty=Math.max(1,parseInt(qEl?qEl.value:1,10)||1);
+  Cart.add({id:id,title:title,price:p,image:image,brand:brand,descriptor:t('#productDescription')||'',link:location.href,availability:'in_stock',availabilityDate:new Date().toISOString()},qty);
+  
+  // Show notification and redirect to cart
+  showNotification(title);
+}
+
+function showNotification(productName) {
+  const notification = document.getElementById('notification');
+  const notificationText = document.getElementById('notification-text');
+  
+  if (notification && notificationText) {
+    // Update notification text with product name
+    notificationText.textContent = `"${productName}" has been added to your cart successfully.`;
+    
+    // Show notification
+    notification.style.display = 'block';
+    notification.classList.remove('hiding');
+    
+    // Auto-hide after 1 second and redirect to cart
+    setTimeout(() => {
+      hideNotification();
+      // Redirect to cart page after notification is hidden
+      setTimeout(() => {
+        window.location.href = 'Cart.html';
+      }, 300); // Wait for animation to complete
+    }, 1000);
+  }
+}
+
+function hideNotification() {
+  const notification = document.getElementById('notification');
+  if (notification) {
+    notification.classList.add('hiding');
+    // Hide after animation completes
+    setTimeout(() => {
+      notification.style.display = 'none';
+      notification.classList.remove('hiding');
+    }, 300);
+  }
+}
+</script>
+
+</body>
+</html>

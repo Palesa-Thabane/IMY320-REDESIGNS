@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailBlazer - Gear Up for Your Next Adventure</title>
+    <link rel="stylesheet" href="../css/LandingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <div class="logo">🏔️ TrailBlazer</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="../html/ProductCatalogue.html">Gear</a></li>
+        <li><a href="../html/TrailsPage.html">Trails</a></li>
+        <li><a href="../html/GroupHikes.html">Community</a></li>
+        <li><a href="../html/AboutUsPage.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="nav-actions">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search gear, trails...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="account-section">
+        <a href="AdminPanel.html" class="account-btn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+            </svg>
+            Admin
+        </a>
+        <a href="../html/LoginPage.html" class="account-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a href="../html/Cart.html" class="cart-icon" aria-label="Cart">
+          🛒
+          <span class="cart-count" id="cart-count" data-cart-count>0</span>
+        </a>
+        <a href="../html/FavoritesPage.html" class="favorites-icon" aria-label="Favorites">
+          ♥
+          <span class="favorites-count" id="favorites-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Gear Up for Your Next Adventure</h1>
+            <p>Discover the best hiking equipment and connect with fellow adventurers in your area</p>
+            <div class="hero-buttons">
+                <a href="#gear" class="cta-button">Start Exploring</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Gear Section -->
+    <section class="section gear-section" id="gear">
+        <div class="container">
+            <h2 class="section-title">Explore Our Gear</h2>
+            <div class="gear-section-cta">
+                <a href="../html/ProductCatalogue.html" class="shop-now-btn">Shop Now</a>
+            </div>
+            <div class="gear-grid">
+                <div class="gear-item">
+                    <div class="gear-icon"></div>
+                    <h3>Footwear</h3>
+                    <p>Premium hiking boots, trail running shoes, and sandals for every terrain and weather condition.</p>
+                </div>
+                <div class="gear-item">
+                    <div class="gear-icon"></div>
+                    <h3>Clothing</h3>
+                    <p>Technical clothing layers including base layers, jackets, and pants for comfort in any climate.</p>
+                </div>
+                <div class="gear-item">
+                    <div class="gear-icon"></div>
+                    <h3>Gear</h3>
+                    <p>Essential hiking equipment from backpacks and trekking poles to camping stoves and sleeping bags.</p>
+                </div>
+                <div class="gear-item">
+                    <div class="gear-icon"></div>
+                    <h3>Accessories</h3>
+                    <p>Must-have accessories including gloves, hats, headlamps, and multi-tools for the complete adventure.</p>
+                </div>
+                <div class="gear-item">
+                    <div class="gear-icon"></div>
+                    <h3>Safety</h3>
+                    <p>Critical safety equipment including GPS devices, first aid kits, emergency beacons, and rescue gear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Trails Section -->
+    <section class="section trails-section" id="trails">
+        <div class="container">
+            <h2 class="section-title">Top Trails Near You</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="trailsCarousel">
+                    <div class="carousel-item">
+                        <div class="trail-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <h3>🏔️ Mountain Ridge Trail</h3>
+                        <p>A challenging 8-mile trail with breathtaking views of the surrounding peaks. Perfect for experienced hikers looking for their next adventure.</p>
+                        <p><strong>Difficulty:</strong> Hard | <strong>Distance:</strong> 8 miles</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trail-image" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <h3>🌲 Forest Loop Path</h3>
+                        <p>A family-friendly 3-mile loop through ancient forests. Great for beginners and families with children.</p>
+                        <p><strong>Difficulty:</strong> Easy | <strong>Distance:</strong> 3 miles</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="trail-image" style="background-image: url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                        <h3>🏞️ Lakeside Adventure</h3>
+                        <p>A moderate 5-mile trail leading to a pristine alpine lake. Perfect for photography and peaceful reflection.</p>
+                        <p><strong>Difficulty:</strong> Moderate | <strong>Distance:</strong> 5 miles</p>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <div class="carousel-dot active" onclick="showSlide(0)"></div>
+                    <div class="carousel-dot" onclick="showSlide(1)"></div>
+                    <div class="carousel-dot" onclick="showSlide(2)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join a Club Section -->
+    <section class="section club-section" id="community">
+        <div class="container">
+            <h2 class="section-title">Join a Hiking Club</h2>
+            <div class="club-content">
+                <div>
+                    <h3>Connect with Fellow Adventurers</h3>
+                    <p>Join local hiking groups and make lasting friendships while exploring the great outdoors. Our community connects hikers of all skill levels.</p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>Weekly group hikes</li>
+                        <li>Skill-building workshops</li>
+                        <li>Safety training sessions</li>
+                        <li>Seasonal adventure challenges</li>
+                    </ul>
+                    <a href="#" class="cta-button">Find Local Groups</a>
+                </div>
+                <div class="club-image">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hike With Us Section -->
+    <section class="section features-section">
+        <div class="container">
+            <h2 class="section-title">Why Hike With Us</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>All our gear is tested by professional hikers and comes with a satisfaction guarantee.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Local Expertise</h3>
+                    <p>Our team knows the local trails and can provide insider tips for your next adventure.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Community Focused</h3>
+                    <p>We're more than a store - we're a community of adventurers supporting each other.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#gear">Shop Gear</a></li>
+                        <li><a href="#trails">Find Trails</a></li>
+                        <li><a href="#community">Join Community</a></li>
+                        <li><a href="../html/AboutUsPage.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 TrailBlazer. All rights reserved. Adventure awaits! 🏔️</p>
+        </div>
+    </footer>
+
+    <script src="../js/LandingPage.js"></script>
+    <script src="../js/Cart.js"></script>
+</body>
+</html>

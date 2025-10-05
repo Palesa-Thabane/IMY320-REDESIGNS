@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout • Details</title>
+<link rel="stylesheet" href="../css/LandingPage.css">
+<link rel="stylesheet" href="../css/Checkout.css?v=6">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <div class="logo">🏔️ TrailBlazer</div>
+      <ul class="nav-links">
+        <li><a href="landingPage.html">Home</a></li>
+        <li><a href="ProductCatalogue.html">Gear</a></li>
+        <li><a href="TrailsPage.html">Trails</a></li>
+        <li><a href="GroupHikes.html">Community</a></li>
+        <li><a href="AboutUsPage.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="nav-actions">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search gear, trails...">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="account-section">
+        <a href="AdminPanel.html" class="account-btn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+            </svg>
+            Admin
+        </a>
+        <a href="LoginPage.html" class="account-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a href="Cart.html" class="cart-icon" aria-label="Cart">🛒 <span class="cart-count" id="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Shipping Details</h1>
+  <div class="grid">
+    <form class="card" id="details-form">
+      <div class="form-grid">
+        <div class="field"><label class="kicker">Email</label><input class="input" id="email" type="email" required></div>
+        <div class="field"><label class="kicker">Phone</label><input class="input" id="phone" required></div>
+
+        <div class="field"><label class="kicker">First name</label><input class="input" id="firstName" required></div>
+        <div class="field"><label class="kicker">Last name</label><input class="input" id="lastName" required></div>
+
+        <div class="field col-span-2"><label class="kicker">Address line 1</label><input class="input" id="address1" required></div>
+        <div class="field col-span-2"><label class="kicker">Address line 2</label><input class="input" id="address2"></div>
+
+        <div class="field"><label class="kicker">City</label><input class="input" id="city" required></div>
+        <div class="field"><label class="kicker">Province</label><input class="input" id="province" required></div>
+        <div class="field"><label class="kicker">Postal code</label><input class="input" id="postalCode" required></div>
+        <div class="field"><label class="kicker">Country</label><input class="input" id="country" value="South Africa" required></div>
+      </div>
+
+      <button class="btn" id="continue-to-payment-btn" style="width:100%;margin-top:10px">Continue to payment</button>
+      <a class="btn link" href="./Cart.html" style="width:100%;margin-top:8px">Back to cart</a>
+      <div class="small" style="margin-top:8px">By continuing, you agree to receive order updates via email.</div>
+    </form>
+
+    <div class="card summary">
+      <div id="checkout-summary"></div>
+    </div>
+  </div>
+</div>
+<script src="../js/Cart.js"></script>
+<script src="../js/Checkout.js"></script>
+</body>
+</html>
